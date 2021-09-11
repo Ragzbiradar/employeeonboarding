@@ -5,7 +5,11 @@ import {
   } from '@material-ui/core';
   import AccountProfile from '../components/AccountProfile';
   import AccountProfileDetails from '../components/AccountProfileDetails'
-  
+  import TaskProgress from "../components/TaskProgress"
+  import ToDoList from '../components/toDoList'
+  import Slideshow from '../components/Slideshow';
+  import Login from './Login';
+
   const Account = () => (
     <>
       <Box
@@ -16,6 +20,7 @@ import {
         }}
       >
         <Container maxWidth="lg">
+        <h2> Telstra On-Boarding Page </h2>
           <Grid
             container
             spacing={3}
@@ -38,6 +43,20 @@ import {
             </Grid>
           </Grid>
         </Container>
+        <Container className="progress">
+        <h2> On-Boarding Progress </h2>
+          <TaskProgress />
+        </Container>
+        <Container className="toDoList">
+          <ToDoList />
+        </Container>
+        <Container>
+        <h2> Assigned Courses </h2>
+          <Slideshow/>
+        </Container>
+        {/* <Container>
+          <Login />
+        </Container> */}
       </Box>
     </>
   );
