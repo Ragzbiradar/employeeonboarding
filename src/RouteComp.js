@@ -6,6 +6,7 @@ import UserDashboard from "./Pages/UserDashboard"
 import Registration from "./Pages/Registration"
 import NewCourse from "./Pages/NewCourse"
 import AddToDo from "./Pages/AddToDo"
+import Login from './Pages/Login'
 
 function RouteComp() {
     return(
@@ -18,6 +19,7 @@ function RouteComp() {
                 <Route exact path="/AllEmployees/newEmp" component={Registration} />
                 <Route exact path="/courses/addCourse" component={NewCourse} />
                 <Route exact path="/AddToDo" component={AddToDo} />
+                <Route exact path="/logout" component={Login} />
             </Switch>
       </div>
     )
