@@ -149,14 +149,14 @@ export default function MiniDrawer() {
         </div>
         <Divider />
         <List>
-          <ListItem>
+          {/* <ListItem>
             <NavLink to="/userDash">
             <Button>  
               <ListItemIcon><DashboardIcon /></ListItemIcon>
               <ListItemText primary="Dashboard" />
             </Button>
             </NavLink>
-          </ListItem>
+          </ListItem> */}
           <ListItem>
             <NavLink to="/courses">
             <Button>  
@@ -165,14 +165,14 @@ export default function MiniDrawer() {
             </Button>
             </NavLink>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <NavLink to="/ProfilePage">
             <Button >  
               <ListItemIcon><AccountCircleIcon /></ListItemIcon>
               <ListItemText primary="Profile Page" />
             </Button>
             </NavLink>
-          </ListItem>
+          </ListItem> */}
           <ListItem>
             <NavLink to="/AllEmployees">
             <Button >  
@@ -190,10 +190,12 @@ export default function MiniDrawer() {
             </NavLink>
           </ListItem>
           <ListItem>
+            <NavLink to="/logout">
             <Button>  
               <ListItemIcon><ExitToAppIcon /></ListItemIcon>
               <ListItemText primary="logout" />
             </Button>
+            </NavLink>
           </ListItem>     
         </List>
       </Drawer>
