@@ -9,6 +9,7 @@ import {
   Divider,
   Typography
 } from '@material-ui/core';
+import AccountDetails from "./AccountProfileDetails"
 
 const user = {
   avatar: '/static/images/avatars/avatar_6.png',
@@ -16,7 +17,7 @@ const user = {
   country: 'USA',
   jobTitle: 'Senior Developer',
   name: 'Katarina Smith',
-  timezone: 'GTM-7'
+  email:'example@gmail.com'
 };
 
 const AccountProfile = (props) => (
@@ -45,6 +46,20 @@ const AccountProfile = (props) => (
         </Typography>
         <Typography
           color="textSecondary"
+          gutterBottom
+          variant="body2"
+        >
+          {user.jobTitle}
+        </Typography>
+        <Typography
+          color="textSecondary"
+          gutterBottom
+          variant="body2"
+        >
+          {user.email}
+        </Typography>
+        <Typography
+          color="textSecondary"
           variant="body1"
         >
           {`${user.city} ${user.country}`}
@@ -56,11 +71,13 @@ const AccountProfile = (props) => (
             {/* incase time is needed */}
           {/* {`${moment().format('hh:mm A')} ${user.timezone}`} */}
         </Typography>
+        <Divider />
+        <Typography>
+          
+        </Typography>
       </Box>
     </CardContent>
     <Divider />
-    <CardActions>
-    </CardActions>
   </Card>
 );
 
